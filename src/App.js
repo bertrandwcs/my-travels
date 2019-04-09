@@ -1,28 +1,26 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
 
-import travel.js from "./travel";
+
+import React, { Component } from 'react';
+import './App.css';
+
+import Travels from "./Travels";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Simpsons Quotes</h1>
-        </header>
-        <travel
+        <h1 className="App-title">My Travels</h1>
+        <Travels
           destination="Hungary"
-          contry="Budapest"
+          country="Budapest"
           photo="http://www.ohb.hu/_photo/city/budapest1.jpg"
-          distance="1200km"
+          distance="1200 km"
         />
-        <travel
-          quote="Me fail English? That's unpossible"
-          character="Ralph Wiggum"
-          image="http://www.ohb.hu/_photo/city/budapest1.jpg"
-          distance="1200km"
+        <Travels
+          destination="Mexique"
+          country="Mexico"
+          photo="https://photo-thalasso-to.advences.com/Mexique-Autotour-7n-1.jpg"
+          distance="1200 km"
         />
       </div>
     );
